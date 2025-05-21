@@ -1,0 +1,43 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="white" fill="none" stroke-width="2">
+    <!-- Paths starting and ending on the right side -->
+    <path id="path2" d="M1440,100 Q1320,200 1440,300 T1440,100" />
+    <path id="path3" d="M1440,200 Q1120,350 1440,500 T1440,200" />
+    <path id="path4" d="M1440,300 Q920,500 1440,600 T1440,300" />
+    <path id="path5" d="M1440,400 Q720,650 1440,700 T1440,400" />
+  </g>
+
+  <!-- Moving Dots -->
+  <circle r="3" fill="white" filter="url(#glow)">
+    <animateMotion dur="5s" repeatCount="indefinite" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" keyTimes="0;0.5;1" calcMode="spline">
+      <mpath href="#path2" />
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="white" filter="url(#glow)">
+    <animateMotion dur="5s" repeatCount="indefinite" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" keyTimes="0;0.5;1" calcMode="spline">
+      <mpath href="#path3" />
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="white" filter="url(#glow)">
+    <animateMotion dur="5s" repeatCount="indefinite" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" keyTimes="0;0.5;1" calcMode="spline">
+      <mpath href="#path4" />
+    </animateMotion>
+  </circle>
+  <circle r="3" fill="white" filter="url(#glow)">
+    <animateMotion dur="5s" repeatCount="indefinite" keySplines="0.5 0 0.5 1; 0.5 0 0.5 1" keyTimes="0;0.5;1" calcMode="spline">
+      <mpath href="#path5" />
+    </animateMotion>
+  </circle>
+
+  <!-- Glow Effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+</svg>

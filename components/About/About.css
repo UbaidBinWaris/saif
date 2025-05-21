@@ -1,0 +1,146 @@
+/* About Section */
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  border-radius: 20px;
+      position: relative;
+    z-index: 2;
+}
+
+.about-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: #000000;
+  
+}
+.about-header-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-first-whole{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-content-container{
+    text-align: left;
+    margin: 50px auto;
+}
+
+.about-header-container-left-Span{
+    margin-bottom: 20px;
+}
+
+.about-section-description{
+    font-size: 1.2rem;
+    color: #aeaeae;
+    text-align: left;
+}
+
+
+.about-values {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.value-card {
+  flex: 1;
+  min-width: 250px;
+  background: rgb(17, 17, 17);
+  box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+.value-card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: #cfcfcf;
+}
+
+.about-graphic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  user-select: none;
+  filter: grayscale(100%);
+  pointer-events: none;
+  object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+
+  .about-first-whole {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-header-container-left-Span{
+    margin-bottom: 0px;
+  }
+  .about-header-container-right{
+        width: 100%;
+    }
+    .about-button{
+    margin: auto auto 30px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-first-whole {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-header-container-left-Span{
+    margin-bottom: 0px;
+  }
+  .about-button{
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1rem;
+  }
+
+  .about-header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-first-whole {
+    flex-direction: column;
+    align-items: center;
+  }
+}
