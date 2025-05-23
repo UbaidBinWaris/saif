@@ -1,5 +1,5 @@
 // "use client";
-import Header from "./../components/Header";
+import Header from "../components/Home_section_1/Header";
 
 export default function Home() {
   return (
