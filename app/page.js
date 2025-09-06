@@ -1,10 +1,8 @@
-// "use client";
-import Header from "../components/Home_section_1/Header";
+"use client";
 
 export default function Home() {
   return (
     <div>
-      <Header />
       hello
     </div>
   );

@@ -3,6 +3,3 @@
 .ff{
     @apply flex justify-center items-center;
 }
-body{
-    @apply text-white ;
-}
