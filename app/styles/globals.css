@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "./color.css";
+@import "./utility.css";
+
+.ff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

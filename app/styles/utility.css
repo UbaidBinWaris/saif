@@ -1,0 +1,34 @@
+/* Tailwind utility classes using CSS variables */
+@layer utilities {
+  .bg-brand-primary {
+    background-color: var(--color-bg-primary);
+  }
+
+  .text-brand-primary {
+    color: var(--color-text-primary);
+  }
+
+  .text-brand-secondary {
+    color: var(--color-text-secondary);
+  }
+
+  .text-brand-muted {
+    color: var(--color-text-muted);
+  }
+
+  .border-brand-light {
+    border-color: var(--color-border-light);
+  }
+
+  .hover-brand-primary:hover {
+    color: var(--color-hover-primary);
+  }
+
+  .transition-brand {
+    transition: color var(--transition-normal);
+  }
+
+  .transition-brand-all {
+    transition: all var(--transition-normal);
+  }
+}
