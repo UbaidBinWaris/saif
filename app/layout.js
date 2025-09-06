@@ -1,5 +1,5 @@
+import Preloader from "./components/preloader";
 import "./styles/globals.css";
-
 export const metadata = {
   title: "GIXI AI Solutions | Top USA Web & AI Development Agency",
   description:
@@ -30,7 +30,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased font-sans">
-        {children}
+        <Preloader>
+          {children}
+        </Preloader>
       </body>
     </html>
   );
