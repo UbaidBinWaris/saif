@@ -1,5 +1,4 @@
 "use client";
-import Footer from "./Home/components/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
          
         </div>
       </main>
-      <Footer />
     </div>
   );
 }
