@@ -1,0 +1,25 @@
+
+.secFour-choose {
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 16px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.505);
+    background: rgba(26, 26, 26, 0.58);
+    border-radius: 30px;
+}
+
+.secFour-choose p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+}
+
+.secFour-choose .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px -2px 0px;
+    /* Adjusted for spacing */
+}

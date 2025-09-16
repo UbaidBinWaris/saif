@@ -1,0 +1,313 @@
+/* Testimonial Card Container */
+.testimonial-card {
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    border-radius: 20px;
+    width: 480px;
+    margin-top: 40px;
+    padding: 20px;
+    position: relative; /* Ensure the card stays in its container */
+    transform: none !important;
+}
+
+/* Testimonial Card Inner Section */
+.testimonial-card-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.testimonial-card-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonial-card-text h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-card-text p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(156, 156, 156);
+}
+
+/* Testimonial Card Rating Section */
+.testimonial-card-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.testimonial-stars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Testimonial Card Description */
+.testimonial-card-description {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: rgb(156, 156, 156);
+}
+
+/* FAQ Section Container */
+.faq-section {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 4rem 0rem;
+    border-radius: 30px;
+    box-shadow: inset rgba(236, 236, 236, 0.08) 0px 2px 0px 0px;
+    overflow: visible;
+  }
+  
+  .faq-container {
+    max-width: 1120px;
+    margin: auto;
+    padding:auto 100px ;
+    overflow: visible;
+  }
+  
+  .faq-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: visible;
+    height: auto;
+  }
+  
+  .faq-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: sticky;
+    top: 50px;
+  }
+  
+  .faq-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+  }
+  
+  .faq-icon {
+    font-size: 1.25rem;
+  }
+  
+  .faq-title {
+    font-weight: 500;
+  }
+  
+  .faq-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+    /* Grey color for the title */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .faq-subheading {
+    color: gray;
+  }
+  
+  .faq-description {
+    color: gray;
+    font-size: 1.125rem;
+  }
+  
+  /* FAQ Right Column */
+  .faq-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .faq-button-container{
+    margin-top: 40px;
+  }
+
+  .my-custom-class {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+
+  /* FAQ Item */
+  .faq-item {
+    border: none;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+  }
+  
+  .faq-question {
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .faq-question:hover {
+    text-decoration: none;
+  }
+  
+  .faq-icon-container {
+    margin-left: auto;
+  }
+  
+  .faq-answer {
+    padding: 0 1.5rem;
+    color: gray;
+    max-height: 0; /* Initially hidden */
+    overflow: hidden; /* Hide content when closed */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Smooth transition */
+  }
+
+  .faq-item.open .faq-answer {
+    max-height: 200px; /* Adjust based on expected content height */
+    padding: 1.5rem; /* Add padding when open */
+}
+
+@media (max-width: 1024px) {
+    .faq-container {
+        margin: auto 100px;
+    }
+
+    .faq-left{
+      top: 80px;
+    }
+    .s4-pbutt{
+      padding: 6px 20px;
+    }
+    .s4-pbutt p{
+      font-size: 12px;
+    }
+
+    .s4-pbutt .dot{
+      width: 10px;
+      height: 10px;
+      margin-bottom: 0;
+    }
+    .faq-heading{
+      font-size: 1.8rem;
+      line-height: 40px;
+      margin-bottom: 8px;
+    }
+
+    .faq-description{
+      font-size: 0.9rem;
+    }
+
+    .testimonial-card{
+      width: 300px;
+      margin-top: 10px;
+    }
+
+    .testimonial-card-text h3{
+      font-size: 1.1rem;
+    }
+
+    .testimonial-card-text p{
+      font-size: 0.8rem;
+    }
+    .testimonial-card-description{
+      font-size: 0.8rem;
+    }
+
+    .my-custom-class{
+      font-size: 14px;
+      padding: 9px 22px;
+    }
+
+    .faq-button-container{
+      margin-top: 20px;
+    }
+ 
+    .faq-question {
+    font-size: 14px;
+  }
+  .faq-answer{
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .faq-container {
+        margin: auto 20px;
+    }
+    .faq-header{
+      display: block;
+    }
+
+    .faq-left{
+      position: static;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .faq-left-inner-text{
+      text-align: center;
+    }
+
+    .faq-right{
+      margin-top: 1rem;
+    }
+    .s4-pbutt{
+      padding: 6px 20px;
+    }
+    .s4-pbutt p{
+      font-size: 12px;
+    }
+
+    .s4-pbutt .dot{
+      width: 10px;
+      height: 10px;
+      margin-bottom: 0;
+    }
+    .faq-heading{
+      font-size: 1.8rem;
+      line-height: 40px;
+      margin-bottom: 8px;
+    }
+
+    .faq-description{
+      font-size: 0.9rem;
+    }
+
+    .testimonial-card{
+      width: auto;
+      margin-top: 10px;
+    }
+
+    .faq-button-container{
+      display: none;
+    }
+
+    .testimonial-card-description{
+      text-align: left;
+    }
+  }

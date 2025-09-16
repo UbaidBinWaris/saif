@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Path Test</title>
+</head>
+<body>
+    <h1>Image Path Test</h1>
+    <h2>Testing different image paths:</h2>
+    
+    <!-- Test different paths -->
+    <div>
+        <h3>Path 1: /uploads/</h3>
+        <img src="/uploads/project1.webp" alt="Test 1" style="max-width: 200px;" onload="console.log('✅ /uploads/ works')" onerror="console.log('❌ /uploads/ failed')">
+    </div>
+    
+    <div>
+        <h3>Path 2: /public/uploads/</h3>
+        <img src="/public/uploads/project1.webp" alt="Test 2" style="max-width: 200px;" onload="console.log('✅ /public/uploads/ works')" onerror="console.log('❌ /public/uploads/ failed')">
+    </div>
+    
+    <div>
+        <h3>Path 3: ./uploads/</h3>
+        <img src="./uploads/project1.webp" alt="Test 3" style="max-width: 200px;" onload="console.log('✅ ./uploads/ works')" onerror="console.log('❌ ./uploads/ failed')">
+    </div>
+    
+    <div>
+        <h3>Path 4: uploads/</h3>
+        <img src="uploads/project1.webp" alt="Test 4" style="max-width: 200px;" onload="console.log('✅ uploads/ works')" onerror="console.log('❌ uploads/ failed')">
+    </div>
+
+    <h2>Blog API Test</h2>
+    <button onclick="testBlogAPI()">Test Blog API</button>
+    <div id="blogResult"></div>
+
+    <script>
+        async function testBlogAPI() {
+            try {
+                const response = await fetch('/db/blog_posts_new.php?page=1&limit=1&status=published');
+                const data = await response.json();
+                
+                if (data.success && data.posts.length > 0) {
+                    const post = data.posts[0];
+                    document.getElementById('blogResult').innerHTML = `
+                        <h3>Sample Blog Post:</h3>
+                        <p><strong>Title:</strong> ${post.title}</p>
+                        <p><strong>Featured Image:</strong> ${post.featured_image || 'None'}</p>
+                        <p><strong>Image Path:</strong> /uploads/${post.featured_image}</p>
+                        <img src="/uploads/${post.featured_image}" alt="${post.title}" style="max-width: 200px;" 
+                             onload="console.log('✅ Blog image loaded')" 
+                             onerror="console.log('❌ Blog image failed: /uploads/${post.featured_image}')">
+                    `;
+                } else {
+                    document.getElementById('blogResult').innerHTML = '<p>No blog posts found</p>';
+                }
+            } catch (error) {
+                document.getElementById('blogResult').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

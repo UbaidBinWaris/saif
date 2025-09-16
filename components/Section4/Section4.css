@@ -1,0 +1,274 @@
+.section-four {
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+    padding-top: 80px;
+    border-radius: 40px;
+    box-shadow: rgba(134, 134, 134, 0.08) 0px 2px 0px 0px inset;
+    
+}
+
+.section-four-main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0;
+    gap: 20px;
+    height: auto;
+    max-width: 1120px;
+  margin: 0 auto;
+}
+
+.secFour-div1,
+.secFour-div2 {
+    flex: 1;
+}
+
+.secFour-div1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    position: sticky;
+    top: 120px;
+}
+
+
+.secFour-hm {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: grey;
+    /* Grey color for the title */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.ClientsSpan {
+    color: white;
+}
+
+
+.secFour-p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(156, 156, 156);
+    margin-bottom: 20px;
+}
+
+.secFourinner-div2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.cc {
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    width: 160px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cc h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cc p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(156, 156, 156);
+}
+
+.secFourinner-div3 button {
+    margin-top: 20px;
+}
+
+.sec4-inner-b {
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+
+.cards-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    /* Allow the container to grow */
+    min-height: 100vh;
+}
+
+.secFour-div2 {
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 30px;
+    position: sticky;
+}
+
+.secFour-div2-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.secFour-div2-inner img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.secFour-div2-inner h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    /* Grey color for the title */
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.secFour-div2-inner p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(156, 156, 156);
+}
+
+.secFour-div2-inner-text2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.stars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.secFour-div2-inner-text3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: rgb(156, 156, 156);
+}
+
+.dd1 {
+    top: 120px;
+}
+
+.dd2 {
+    top: 140px;
+}
+
+.dd3 {
+    top: 160px;
+}
+
+@media (max-width: 1024px) {
+    .section-four-main {
+        margin: auto 100px;
+    }
+    .secFour-div1{
+        width: 50%;
+    }
+
+    .cc h2{
+        font-size: 16px;
+    }
+    .cc p{
+        font-size: 10px;
+    }
+
+    .sec4-inner-b{
+        font-size: 14px;
+        padding: 9px 22px;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+
+    .section-four-main {
+        flex-direction: column;
+        margin: 0 20px 20px 20px;
+        padding: 0;
+    }
+    .secFour-div1{
+        width: 100%;
+        position: static;
+        align-items: center;
+    }
+    .secFour-div2{
+        position: static;
+        max-width: none;
+    }
+
+    .secFourinner-div3{
+        width: 100%;
+    }
+
+    .secFourinner-div1{
+        text-align: center;
+    }
+    .sec4-inner-b{
+        font-size: 14px;
+        padding: 9px 22px;
+        width: 100%;
+    }
+
+    .secFour-div2-inner h3{
+        font-size: 1.2rem;
+    }
+    .secFour-div2-inner p{
+        font-size: 0.9rem;
+    }
+    .secFour-p{
+        text-align: center;
+    }
+    .secFour-div2-inner-text3{
+        font-size: 0.8rem;
+    }
+
+    .secFourinner-div2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cc{
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width: 425px) {
+    .secFour-hm{
+        font-size: 2rem;
+    }
+    .secFour-p{
+        font-size: 0.9rem;
+    }
+}
+

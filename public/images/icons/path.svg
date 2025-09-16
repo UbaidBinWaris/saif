@@ -1,0 +1,84 @@
+<svg
+    width="864"
+    height="2600"
+    viewBox="0 0 864 2350"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- Path -->
+    <path
+        id="svgPath"
+        d="
+            M 864 0
+             C -100 150, 964 150, 1432 400
+      C -100 450, 964 450, 432 600
+      C -100 750, 964 750, 432 900
+      C -100 1050, 964 1050, 432 1200
+      C -100 1350, 964 1350, 432 1500
+      C -100 1650, 964 1650, 432 1800
+      C  100 1950, 964 1950, 902 2000
+        "
+        fill="none"
+        stroke="white"
+        stroke-width="1"
+        stroke-dasharray="none"
+    />
+
+    <!-- Glowing Dots -->
+    <circle r="2" fill="white" filter="url(#glow)">
+        <animateMotion
+            dur="20s"
+            repeatCount="indefinite"
+            begin="0s"
+        >
+            <mpath href="#svgPath" />
+        </animateMotion>
+    </circle>
+    <circle r="2" fill="white" filter="url(#glow)">
+        <animateMotion
+            dur="20s"
+            repeatCount="indefinite"
+            begin="4s" 
+        >
+            <mpath href="#svgPath" />
+        </animateMotion>
+    </circle>
+    <circle r="2" fill="white" filter="url(#glow)">
+        <animateMotion
+            dur="20s"
+            repeatCount="indefinite"
+            begin="8s" 
+        >
+            <mpath href="#svgPath" />
+        </animateMotion>
+    </circle>
+    <circle r="2" fill="white" filter="url(#glow)">
+        <animateMotion
+            dur="20s"
+            repeatCount="indefinite"
+            begin="12s" 
+        >
+            <mpath href="#svgPath" />
+        </animateMotion>
+    </circle>
+    <circle r="2" fill="white" filter="url(#glow)">
+        <animateMotion
+            dur="20s"
+            repeatCount="indefinite"
+            begin="16s" 
+        >
+            <mpath href="#svgPath" />
+        </animateMotion>
+    </circle>
+
+    <!-- Glow Effect -->
+    <defs>
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+            <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+</svg>

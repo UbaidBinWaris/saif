@@ -1,0 +1,408 @@
+.testimonial-section-card {
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    position: relative;
+}
+
+.testimonial-section-card-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.testimonial-section-card-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.testimonial-section-card-text h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-section-card-text p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(156, 156, 156);
+}
+
+.testimonial-section-card-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.testimonial-section-stars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.testimonial-section-card-description {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    color: rgb(156, 156, 156);
+}
+
+
+.contact-section {
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Contact Section */
+.contact-section-container {
+    width: 100%;
+    color: white;
+    padding: 8rem 1rem 4rem 1rem;
+    border-radius: 80px;
+  
+}
+
+.contact-section-wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.contact-section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    min-width: 0;
+        z-index: 2;
+    position: relative;
+}
+
+.contact-section-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-section-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact-section-subheading {
+    color: gray;
+}
+
+.contact-section-description {
+    color: rgb(156, 156, 156);
+    font-size: 1.125rem;
+}
+
+.contact-section-right {
+    flex: 2 1 0%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: sticky;
+    top: 60px;
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.but-p-mid{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(156, 156, 156);
+}
+
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.contact-form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(222, 220, 220);
+}
+
+
+.contact-form-group input,
+.contact-form-group select,
+.contact-form-group textarea {
+    background: rgb(12, 12, 12);
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: white;
+    font-size: 1rem;
+    border: none !important;
+    box-shadow: rgba(255, 255, 255, 0.08) 2px 2px 4px 0px inset;
+}
+
+
+.contact-form-group input::placeholder,
+.contact-form-group textarea::placeholder {
+    color: gray;
+}
+
+.contact-form-group textarea {
+    background: rgb(12, 12, 12) !important;
+    border: none !important;
+    resize: none;
+    height: 150px;
+}
+
+.contact-form-group input:focus,
+.contact-form-group select:focus,
+.contact-form-group textarea:focus {
+    outline: none;
+    /* Forcefully remove the outline */
+    border-color: white;
+    /* Optional: Add a custom border color */
+    border: none !important;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form-submit {
+    font-size: 1rem;
+    background: rgb(12, 12, 12);
+    box-shadow: 
+        rgba(255, 255, 255, 0.08) 4px 4px 12px 0px inset, /* existing shadow */
+        rgba(255, 255, 255, 0.08) 0px -4px 12px 0px inset; /* bottom inset shadow */
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contact-form-submit:hover {
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+}
+
+
+.contact-form-group-row {
+    display: flex;
+    gap: 1rem;
+    min-width: 0;
+    /* Add space between First Name and Last Name fields */
+}
+
+.contact-form-group {
+    flex: 1;
+    /* Ensure both fields take equal width */
+}
+
+.textarea-wrapper {
+    position: relative;
+}
+
+.textarea-wrapper textarea {
+    width: 100%;
+    background: rgb(17, 17, 17);
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 8px;
+    padding: 0.75rem;
+    color: white;
+    font-size: 1rem;
+    resize: none;
+    height: 150px;
+}
+
+.textarea-wrapper .char-count {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 0.875rem;
+    color: gray;
+    pointer-events: none;
+}
+
+
+
+/* Stats Section */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+
+}
+
+.stats-card {
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    width: 160px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats-card h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.2rem;
+}
+
+.stats-card p {
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.stats-card:hover {
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+.call-card {
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.call-card h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-call-b {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 20px;
+    background: rgb(17, 17, 17);
+    box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;
+    color: white;
+    border: 2px solid #000000;
+
+}
+
+
+@media (max-width: 1085px){
+    .contact-section-right{
+        top: 40px;
+    }
+    .stats-container{
+        flex-wrap: wrap;
+    }
+
+    .stats-card{
+        width: 100%;
+        min-width: 160px;
+    }
+
+    .contact-section-heading
+    {
+        font-size: 2.5rem;
+    }
+
+    .testimonial-section-card-text h3{
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .testimonial-section-card-text p{
+        font-size: 0.8rem;
+    }
+
+    .testimonial-section-card-description p{
+        font-size: 0.8rem;
+    }
+
+    .call-card{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .call-card h2{
+        font-size: 0.8rem;
+    }
+    .contact-call-b{
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+    .textarea-wrapper textarea{
+        height: 100px;
+    }
+}
+
+/* Background Graphic */
+.about-graphic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  user-select: none;
+  filter: grayscale(100%) brightness(0.3);
+  pointer-events: none;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .contact-section-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section-left,
+    .contact-section-right {
+        width: 100%;
+        flex: none;
+    }
+
+    .contact-section-heading {
+        font-size: 2.5rem;
+    }
+
+    .contact-form-group-row {
+        flex-direction: column;
+    }
+
+    .contact-form-group {
+        width: 100%;
+    }
+    
+}

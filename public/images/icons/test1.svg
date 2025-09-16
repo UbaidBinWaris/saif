@@ -1,0 +1,42 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Full-width animated waves -->
+  <g stroke="white" fill="none" stroke-width="2">
+    <path id="wave1" d="M0,200 Q360,100 720,200 T1440,200" />
+    <path id="wave2" d="M0,300 Q360,200 720,300 T1440,300" />
+    <path id="wave3" d="M0,400 Q360,300 720,400 T1440,400" />
+    <path id="wave4" d="M0,500 Q360,400 720,500 T1440,500" />
+  </g>
+  <!-- Animated glowing circles moving along each wave -->
+  <circle r="8" fill="white" filter="url(#glow)">
+    <animateMotion dur="6s" repeatCount="indefinite">
+      <mpath href="#wave1" />
+    </animateMotion>
+  </circle>
+  <circle r="8" fill="white" filter="url(#glow)">
+    <animateMotion dur="7s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" />
+    <animateMotion dur="7s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1">
+      <mpath href="#wave2" />
+    </animateMotion>
+  </circle>
+  <circle r="8" fill="white" filter="url(#glow)">
+    <animateMotion dur="8s" repeatCount="indefinite">
+      <mpath href="#wave3" />
+    </animateMotion>
+  </circle>
+  <circle r="8" fill="white" filter="url(#glow)">
+    <animateMotion dur="9s" repeatCount="indefinite">
+      <mpath href="#wave4" />
+    </animateMotion>
+  </circle>
+  <!-- Glow Effect -->
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
