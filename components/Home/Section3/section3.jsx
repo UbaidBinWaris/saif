@@ -3,9 +3,9 @@ import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import "./section3.css";
-import Button from "../Other/button";
-import Pbutton from "../Other/Pbutton";
-import { PATHS } from "../../constants/assetPaths";
+import Button from "../../Other/button";
+import Pbutton from "../../Other/Pbutton";
+import { PATHS } from "../../../constants/assetPaths";
 
 const SectionThree = () => {
   const sectionRef = useRef(null);

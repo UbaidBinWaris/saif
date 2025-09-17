@@ -7,13 +7,13 @@ export { default as Footer } from './Footer/Footer';
 export { default as Preloader } from './Preloader/Preloader';
 
 // Page Sections
-export { default as HeaderHero } from './Header/HeaderHero';
-export { default as SectionOne } from './Section1/SectionOne';
-export { default as Card } from './Section2/card';
-export { default as SectionThree } from './Section3/section3';
-export { default as SectionFour } from './Section4/Section4';
-export { default as FAQs } from './Section5/FAQs';
-export { default as Connect } from './Section6/Connect';
+export { default as HeaderHero } from './Home/Header/HeaderHero';
+export { default as SectionOne } from './Home/Section1/SectionOne';
+export { default as Card } from './Home/Section2/card';
+export { default as SectionThree } from './Home/Section3/section3';
+export { default as SectionFour } from './Home/Section4/Section4';
+export { default as FAQs } from './Home/Section5/FAQs';
+export { default as Connect } from './Home/Section6/Connect';
 
 // Page Components
 export { default as About } from './About/About';
@@ -43,5 +43,5 @@ export { default as SEOHead } from './SEO/SEOHead';
 export { default as AnimatedCounter } from './Contact/AnimatedCounter';
 
 // Hooks and Logic
-export { usePlanetMouseTracking } from './Header/headerLogic';
-export { default as cardLogic } from './Section2/cardLogic';
+export { usePlanetMouseTracking } from './Home/Header/headerLogic';
+export { default as cardLogic } from './Home/Section2/cardLogic';

@@ -7,7 +7,7 @@ import Pbutton from "../Other/Pbutton";
 import { PATHS } from "../../constants/assetPaths";
 import Button from "../Other/button";
 import AnimatedCounter from "./AnimatedCounter";
-import { usePlanetMouseTracking } from "../Header/headerLogic";
+import { usePlanetMouseTracking } from "../Home/Header/headerLogic";
 
 // AnimatedCounter component
 <AnimatedCounter end="250M+" />

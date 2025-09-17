@@ -2,23 +2,23 @@ import dynamic from 'next/dynamic';
 import { Suspense } from 'react';
 
 // Import critical above-the-fold components synchronously
-import HeaderHero from '../components/Header/HeaderHero';
-import SectionOne from '../components/Section1/SectionOne';
+import HeaderHero from '../components/Home/Header/HeaderHero';
+import SectionOne from '../components/Home/Section1/SectionOne';
 
 // Dynamic imports for below-the-fold components
-const Card = dynamic(() => import('../components/Section2/card'), {
+const Card = dynamic(() => import('../components/Home/Section2/card'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded" />
 });
 
-const SectionThree = dynamic(() => import('../components/Section3/section3'), {
+const SectionThree = dynamic(() => import('../components/Home/Section3/section3'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded" />
 });
 
-const SectionFour = dynamic(() => import('../components/Section4/Section4'), {
+const SectionFour = dynamic(() => import('../components/Home/Section4/Section4'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded" />
 });
 
-const FAQs = dynamic(() => import('../components/Section5/FAQs'), {
+const FAQs = dynamic(() => import('../components/Home/Section5/FAQs'), {
   loading: () => <div className="h-96 bg-gray-100 animate-pulse rounded" />
 });
 

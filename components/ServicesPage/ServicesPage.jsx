@@ -9,7 +9,7 @@ import Button from "../Other/button";
 import ServiceSlider from "../ServiceSlider/ServiceSlider";
 import { PATHS } from "../../constants/assetPaths";
 import { LayoutGrid, Paintbrush, FileImage } from "lucide-react";
-import { usePlanetMouseTracking } from "../Header/headerLogic";
+import { usePlanetMouseTracking } from "../Home/Header/headerLogic";
 
 const ServicesPage = () => {
   // Services array for the slider
