@@ -1,10 +1,112 @@
 :root {
-  /* Core Neutrals */
-  --color-black: #0a0a0a;           /* Primary backgrounds, cards */
-  --color-white: #ffffff;           /* Primary text, highlights */
-  --color-light-grey: #d1d5db;     /* Secondary text, subtle elements */
-  --color-dark-grey: #6b7280;      /* Muted text, borders, icons */
+  /* ===== PRIMARY COLORS ===== */
+  /* Pure Black & White */
+  --color-black: #000000;           /* Pure black for maximum contrast */
+  --color-white: #ffffff;           /* Pure white for text and highlights */
   
-  /* Signature Accent */
-  --color-universe-orange: #f59e0b; /* CTAs, planets, special effects */
+  /* Refined Grays */
+  --color-dark-grey: #2a2a2a;      /* Perfect dark gray for secondary backgrounds */
+  --color-light-grey: #e5e5e5;     /* Light gray for subtle elements and borders */
+  
+  /* Planet Yellow Accent */
+  --color-planet-yellow: #ffc107;   /* Bright planet yellow - main accent color */
+  
+  /* ===== ENHANCED VARIATIONS ===== */
+  /* Black Variations */
+  --color-black-soft: #0a0a0a;     /* Softer black from your current system */
+  --color-black-alpha-95: rgba(0, 0, 0, 0.95);
+  --color-black-alpha-90: rgba(0, 0, 0, 0.9);
+  --color-black-alpha-80: rgba(0, 0, 0, 0.8);
+  --color-black-alpha-60: rgba(0, 0, 0, 0.6);
+  --color-black-alpha-40: rgba(0, 0, 0, 0.4);
+  --color-black-alpha-20: rgba(0, 0, 0, 0.2);
+  --color-black-alpha-10: rgba(0, 0, 0, 0.1);
+  
+  /* White Variations */
+  --color-white-soft: #fafafa;     /* Softer white for backgrounds */
+  --color-white-alpha-95: rgba(255, 255, 255, 0.95);
+  --color-white-alpha-90: rgba(255, 255, 255, 0.9);
+  --color-white-alpha-80: rgba(255, 255, 255, 0.8);
+  --color-white-alpha-60: rgba(255, 255, 255, 0.6);
+  --color-white-alpha-40: rgba(255, 255, 255, 0.4);
+  --color-white-alpha-30: rgba(255, 255, 255, 0.3);
+  --color-white-alpha-20: rgba(255, 255, 255, 0.2);
+  --color-white-alpha-10: rgba(255, 255, 255, 0.1);
+  
+  /* Dark Grey Variations */
+  --color-dark-grey-lighter: #404040;
+  --color-dark-grey-darker: #1a1a1a;
+  --color-dark-grey-alpha-90: rgba(42, 42, 42, 0.9);
+  --color-dark-grey-alpha-80: rgba(42, 42, 42, 0.8);
+  --color-dark-grey-alpha-60: rgba(42, 42, 42, 0.6);
+  --color-dark-grey-alpha-40: rgba(42, 42, 42, 0.4);
+  
+  /* Light Grey Variations */
+  --color-light-grey-darker: #d0d0d0;
+  --color-light-grey-lighter: #f5f5f5;
+  --color-light-grey-alpha-90: rgba(229, 229, 229, 0.9);
+  --color-light-grey-alpha-80: rgba(229, 229, 229, 0.8);
+  --color-light-grey-alpha-60: rgba(229, 229, 229, 0.6);
+  --color-light-grey-alpha-40: rgba(229, 229, 229, 0.4);
+  
+  /* Planet Yellow Variations */
+  --color-planet-yellow-light: #ffdd57;   /* Lighter yellow for hover states */
+  --color-planet-yellow-dark: #e6ac00;    /* Darker yellow for active states */
+  --color-planet-yellow-alpha-90: rgba(255, 193, 7, 0.9);
+  --color-planet-yellow-alpha-80: rgba(255, 193, 7, 0.8);
+  --color-planet-yellow-alpha-60: rgba(255, 193, 7, 0.6);
+  --color-planet-yellow-alpha-40: rgba(255, 193, 7, 0.4);
+  --color-planet-yellow-alpha-20: rgba(255, 193, 7, 0.2);
+  --color-planet-yellow-alpha-10: rgba(255, 193, 7, 0.1);
+  
+  /* ===== SEMANTIC COLORS ===== */
+  /* Background Colors */
+  --bg-primary: var(--color-black);
+  --bg-secondary: var(--color-black-soft);
+  --bg-tertiary: var(--color-dark-grey);
+  --bg-light: var(--color-white);
+  --bg-light-soft: var(--color-white-soft);
+  --bg-overlay: var(--color-black-alpha-80);
+  --bg-glass: var(--color-white-alpha-10);
+  --bg-nav: var(--color-black-alpha-95);
+  
+  /* Text Colors */
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-light-grey);
+  --text-muted: var(--color-dark-grey);
+  --text-inverse: var(--color-black);
+  --text-accent: var(--color-planet-yellow);
+  
+  /* Border Colors */
+  --border-primary: var(--color-dark-grey);
+  --border-light: var(--color-light-grey);
+  --border-accent: var(--color-planet-yellow);
+  --border-subtle: var(--color-white-alpha-20);
+  --border-glass: var(--color-white-alpha-10);
+  
+  /* Interactive States */
+  --interactive-default: var(--color-planet-yellow);
+  --interactive-hover: var(--color-planet-yellow-light);
+  --interactive-active: var(--color-planet-yellow-dark);
+  --interactive-focus: var(--color-planet-yellow-alpha-60);
+  --interactive-disabled: var(--color-dark-grey);
+  
+  /* Shadow Colors */
+  --shadow-light: var(--color-black-alpha-10);
+  --shadow-medium: var(--color-black-alpha-20);
+  --shadow-heavy: var(--color-black-alpha-40);
+  --shadow-accent: var(--color-planet-yellow-alpha-40);
+  --shadow-glow: var(--color-white-alpha-40);
+  --shadow-nav: var(--color-white-alpha-60);
+  
+  /* ===== GRADIENTS ===== */
+  --gradient-primary: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark-grey) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--color-planet-yellow) 0%, var(--color-planet-yellow-dark) 100%);
+  --gradient-glass: linear-gradient(135deg, var(--color-white-alpha-10) 0%, var(--color-white-alpha-20) 100%);
+  --gradient-overlay: linear-gradient(180deg, var(--color-black-alpha-60) 0%, var(--color-black-alpha-80) 100%);
+  --gradient-hero: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark-grey-darker) 50%, var(--color-black) 100%);
+  
+  /* ===== LEGACY COMPATIBILITY ===== */
+  /* Keep these for backward compatibility with existing code */
+  --color-universe-orange: var(--color-planet-yellow); /* Your original accent color */
 }

@@ -1,9 +1,9 @@
 /* ServiceSlider Component Styles */
 .services-button-container {
-  width: 100%;
+  width: 90vw;
   display: flex;
-  justify-content: flex-center;
-  margin: 2rem 0;
+  justify-content: center;
+  margin: 2rem auto;
   overflow: hidden;
 }
 
@@ -35,12 +35,12 @@
   margin-right: 0;
 }
 
-/* Infinite scroll animation */
+/* Infinite scroll animation - simple and efficient */
 @keyframes scroll-infinite {
-  0% {
+  from {
     transform: translate3d(0, 0, 0);
   }
-  100% {
+  to {
     transform: translate3d(-50%, 0, 0);
   }
 }
@@ -68,7 +68,7 @@
 
 @media (max-width: 768px) {
   .services-button-container {
-    margin: 1rem 0;
+    margin: 1rem auto;
   }
   
   .Pbutton-slider-right {
