@@ -1,4 +1,5 @@
 import "./Pbutton.css";
+import "../../app/styles/color.css";
 import { PATHS } from "../../constants/assetPaths";
 import Image from "next/image";
 

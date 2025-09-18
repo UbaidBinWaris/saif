@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Pbutton from "../Other/Pbutton";
 import "./ServiceSlider.css";
+import "../../app/styles/color.css";
 
 const ServiceSlider = () => {
   const services = [
@@ -18,14 +19,15 @@ const ServiceSlider = () => {
     "Automation Consulting"
   ];
 
-  // Just duplicate for seamless loop - simpler and more efficient
-  const repeatedServices = [...services, ...services];
+  // Triple the services for truly seamless infinite scroll
+  // This ensures smooth transition without visible jumps
+  const repeatedServices = [...services, ...services, ...services];
 
   return (
     <div className="services-button-container">
       <div className="Pbutton-slider-right">
         {repeatedServices.map((service, index) => (
-          <div key={index}>
+          <div key={`service-${index}`} className="service-item">
             <Link href="/contact">
               <Pbutton className="cursor-pointer">{service}</Pbutton>
             </Link>

@@ -1,5 +1,5 @@
 import ClientLayout from './providers';
-import '../styles/globals.css';
+import './styles/globals.css';
 import '../styles/App.css';
 import { Roboto } from 'next/font/google';
 

@@ -1,10 +1,12 @@
 /* ServiceSlider Component Styles */
 .services-button-container {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   margin: 2rem auto;
   overflow: hidden;
+  background-color: var(--bg-primary);
+  position: relative;
 }
 
 .Pbutton-slider-right {
@@ -12,11 +14,35 @@
   gap: 1.5rem; /* spacing between buttons */
   padding: 1rem 0;
   width: max-content;
-  animation: scroll-infinite 45s linear infinite; /* slower, smoother */
+  animation: scroll-infinite 60s linear infinite; /* Slower for smoother experience */
   will-change: transform; /* hint for smoother animation */
   backface-visibility: hidden; /* reduce repainting */
+  color: var(--text-primary);
 }
 
+/* Individual service item styling */
+.service-item {
+  flex-shrink: 0;
+  white-space: nowrap;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.service-item:hover {
+  color: var(--interactive-hover);
+}
+
+/* Infinite scroll animation - truly seamless with tripled content */
+@keyframes scroll-infinite {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-33.333%, 0, 0); /* Move by exactly 1/3 since we tripled content */
+  }
+}
+
+/* Hide scrollbars */
 .Pbutton-slider-right::-webkit-scrollbar {
   display: none;
 }
@@ -26,58 +52,69 @@
   scrollbar-width: none;
 }
 
-.Pbutton-slider-right > div {
-  flex-shrink: 0;
-  white-space: nowrap;
-}
-
-.Pbutton-slider-right > div:last-child {
-  margin-right: 0;
-}
-
-/* Infinite scroll animation - simple and efficient */
-@keyframes scroll-infinite {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-
 /* Pause animation on hover */
 .services-button-container:hover .Pbutton-slider-right {
   animation-play-state: paused;
 }
 
+/* Service button specific styling */
+.services-button-container .Pbutton-slider-right a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.services-button-container .Pbutton-slider-right a:hover {
+  color: var(--interactive-hover);
+}
+
+/* Ensure buttons maintain consistent size */
+.service-item a .cursor-pointer {
+  min-width: max-content;
+  display: inline-block;
+}
+
 /* Header specific styles */
 .head-ser-con {
   margin-top: 3rem;
+  background-color: var(--bg-secondary);
 }
 
 .service-btn-head {
   white-space: nowrap;
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-glass);
+  transition: all 0.3s ease;
+}
+
+.service-btn-head:hover {
+  color: var(--interactive-hover);
+  border-color: var(--border-accent);
+  background: var(--bg-tertiary);
 }
 
 /* Services page specific styles */
 .services-page-slider {
   margin: 4rem 0;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 @media (max-width: 768px) {
   .services-button-container {
     margin: 1rem auto;
+    width: 100vw;
   }
   
   .Pbutton-slider-right {
     padding: 0.5rem 0;
-    gap: 0.75rem;
-    animation: scroll-infinite 55s linear infinite; /* a bit slower on small screens */
+    gap: 1rem;
+    animation: scroll-infinite 70s linear infinite; /* Slower on mobile */
   }
-  
-  /* spacing handled by parent gap */
   
   .service-btn-head {
     padding: 0.5rem 1rem;
@@ -87,8 +124,11 @@
 
 @media (max-width: 480px) {
   .Pbutton-slider-right {
-    animation: scroll-infinite 50s linear infinite;
+    animation: scroll-infinite 80s linear infinite; /* Even slower on small screens */
+    gap: 0.75rem;
   }
   
-  /* spacing handled by parent gap */
+  .service-item {
+    font-size: 0.9rem;
+  }
 }

@@ -1,18 +1,28 @@
 
 .secFour-choose {
     text-align: center;
-    color: #ffffff;
+    color: var(--text-primary, #ffffff);
     padding: 8px 16px;
     display: inline-block;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.505);
-    background: rgba(26, 26, 26, 0.58);
+    box-shadow: 0 0 10px var(--shadow-glow, rgba(255, 255, 255, 0.505));
+    background: var(--bg-glass, rgba(26, 26, 26, 0.58));
     border-radius: 30px;
+    border: 1px solid var(--border-subtle, transparent);
+    transition: all 0.3s ease;
+}
+
+.secFour-choose:hover {
+    color: var(--interactive-hover, #ffdd57);
+    box-shadow: 0 0 15px var(--shadow-accent, rgba(255, 193, 7, 0.4));
+    border-color: var(--border-accent, #ffc107);
+    background: var(--bg-tertiary, #2a2a2a);
 }
 
 .secFour-choose p {
     display: inline-block;
     font-size: 14px;
     margin: 0;
+    color: inherit;
 }
 
 .secFour-choose .dot {
@@ -21,5 +31,6 @@
     border-radius: 50%;
     display: inline-block;
     margin: 0 8px -2px 0px;
+    background-color: var(--interactive-default, #ffc107);
     /* Adjusted for spacing */
 }

@@ -132,28 +132,29 @@
   object-fit: cover;
 }
 
-/* Slider Styles */
+/* Slider Styles - Updated to match home page */
 .services-slider-container {
   position: relative;
   width: 100%;
+  height: auto;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .services-slider {
   display: flex;
-  gap: 10px;
-  animation: slide 30s ease-in-out infinite alternate;
-  /* Smoother two-side animation */
+  gap: 20px;
   will-change: transform;
-  /* Optimize animation performance */
+  /* Remove old animation, now controlled by JS */
 }
 
 .services-slider-image {
   width: auto;
   height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+  filter: none;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0; /* Prevent images from shrinking */
 }
 
 .ser-graphic {
@@ -170,16 +171,7 @@
 }
 
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(-530%);
-    /* Move left by the full slider's width */
-  }
-}
+/* Old animation removed - now using JS-controlled sliding like home page */
 
 /* Infinite Scrolling Buttons */
 .services-button-container {
