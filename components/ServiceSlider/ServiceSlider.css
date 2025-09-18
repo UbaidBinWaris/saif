@@ -2,16 +2,19 @@
 .services-button-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-center;
   margin: 2rem 0;
+  overflow: hidden;
 }
 
 .Pbutton-slider-right {
   display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 1rem;
+  gap: 1.5rem; /* spacing between buttons */
+  padding: 1rem 0;
+  width: max-content;
+  animation: scroll-infinite 45s linear infinite; /* slower, smoother */
+  will-change: transform; /* hint for smoother animation */
+  backface-visibility: hidden; /* reduce repainting */
 }
 
 .Pbutton-slider-right::-webkit-scrollbar {
@@ -21,6 +24,30 @@
 .Pbutton-slider-right {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.Pbutton-slider-right > div {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.Pbutton-slider-right > div:last-child {
+  margin-right: 0;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll-infinite {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Pause animation on hover */
+.services-button-container:hover .Pbutton-slider-right {
+  animation-play-state: paused;
 }
 
 /* Header specific styles */
@@ -45,12 +72,23 @@
   }
   
   .Pbutton-slider-right {
-    gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
+    gap: 0.75rem;
+    animation: scroll-infinite 55s linear infinite; /* a bit slower on small screens */
   }
+  
+  /* spacing handled by parent gap */
   
   .service-btn-head {
     padding: 0.5rem 1rem;
     font-size: 0.8rem;
   }
+}
+
+@media (max-width: 480px) {
+  .Pbutton-slider-right {
+    animation: scroll-infinite 50s linear infinite;
+  }
+  
+  /* spacing handled by parent gap */
 }

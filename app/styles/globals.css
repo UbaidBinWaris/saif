@@ -8,6 +8,23 @@
     align-items: center;
 }
 
+/* Infinite scroll animation for ServiceSlider */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 20s linear infinite;
+}
+
+.pause-animation {
+    animation-play-state: paused;
+}
 
 body {
     @apply bg-black text-white;

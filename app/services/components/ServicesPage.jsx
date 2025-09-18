@@ -12,20 +12,6 @@ import { LayoutGrid, Paintbrush, FileImage } from "lucide-react";
 import { usePlanetMouseTracking } from "../../Home/components/Header/headerLogic";
 
 const ServicesPage = () => {
-  // Services array for the slider
-  const servicesPageServices = [
-    "n8n Development",
-    "Workflow Automation",
-    "API Integration",
-    "Process Optimization",
-    "Custom Automation",
-    "Web Development",
-    "Database Integration",
-    "Business Intelligence",
-    "Digital Transformation",
-    "Automation Consulting"
-  ];
-
   usePlanetMouseTracking();
   return (
     <>
@@ -270,11 +256,7 @@ const ServicesPage = () => {
             </div>
           </section>
 
-          <ServiceSlider 
-            services={servicesPageServices}
-            containerClassName="services-page-slider"
-            linkHref="/contact"
-          />
+          <ServiceSlider />
         </div>
       </div>
     </>
