@@ -1,4 +1,4 @@
-import Contact from '../../components/Contact/Contact';
+import Contact from './components/Contact';
 
 export const metadata = {
   title: 'Contact GIXI AI - Get in Touch for AI Solutions',

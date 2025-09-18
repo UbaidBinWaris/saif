@@ -4,8 +4,8 @@ import { Helmet } from "@dr.pogodin/react-helmet";
 import Link from "next/link";
 import Image from "next/image";
 import "./Blog.css";
-import Preloader from "../Preloader/Preloader";
-import { getBlogPosts } from "../../data/blog";
+import Preloader from "../../../components/Preloader/Preloader";
+import { getBlogPosts } from "../../../data/blog";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);

@@ -1,10 +1,10 @@
 'use client'
 import "./card.css";
-import Button from "../../Other/button";
+import Button from "../../../../components/Other/button";
 import { useScrollCardAnimation } from "./cardLogic";
 import Link from "next/link";
 import Image from "next/image";
-import { PATHS } from "../../../constants/assetPaths";
+import { PATHS } from "../../../../constants/assetPaths";
 
 const Card = () => {
   

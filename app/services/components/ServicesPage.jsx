@@ -4,12 +4,12 @@ import { Helmet } from "@dr.pogodin/react-helmet";
 import Image from "next/image";
 import Link from "next/link";
 import "./ServicesPage.css";
-import Pbutton from "../Other/Pbutton";
-import Button from "../Other/button";
-import ServiceSlider from "../ServiceSlider/ServiceSlider";
-import { PATHS } from "../../constants/assetPaths";
+import Pbutton from "../../../components/Other/Pbutton";
+import Button from "../../../components/Other/button";
+import ServiceSlider from "../../../components/ServiceSlider/ServiceSlider";
+import { PATHS } from "../../../constants/assetPaths";
 import { LayoutGrid, Paintbrush, FileImage } from "lucide-react";
-import { usePlanetMouseTracking } from "../Home/Header/headerLogic";
+import { usePlanetMouseTracking } from "../../Home/components/Header/headerLogic";
 
 const ServicesPage = () => {
   // Services array for the slider

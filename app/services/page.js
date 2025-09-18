@@ -1,4 +1,4 @@
-import ServicesPage from '../../components/ServicesPage/ServicesPage';
+import ServicesPage from './components/ServicesPage';
 
 export const metadata = {
   title: 'AI Services - GIXI AI Solutions & Development',

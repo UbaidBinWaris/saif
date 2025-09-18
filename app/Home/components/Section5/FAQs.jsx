@@ -4,9 +4,9 @@ import { X, Plus } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import "./FAQs.css";
-import Pbutton from "../../Other/Pbutton";
-import Button from "../../Other/button";
-import { PATHS } from "../../../constants/assetPaths";
+import Pbutton from "../../../../components/Other/Pbutton";
+import Button from "../../../../components/Other/button";
+import { PATHS } from "../../../../constants/assetPaths";
 
 export default function FAQSection() {
   const [openItem, setOpenItem] = useState("item-1");

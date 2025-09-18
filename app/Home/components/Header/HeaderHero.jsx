@@ -4,9 +4,9 @@ import { Helmet } from "@dr.pogodin/react-helmet";
 import Image from "next/image";
 import "./HeaderHero.css";
 import Link from "next/link";
-import Button from "../../Other/button";
-import ServiceSlider from "../../ServiceSlider/ServiceSlider";
-import { PATHS } from "../../../constants/assetPaths";
+import Button from "../../../../components/Other/button";
+import ServiceSlider from "../../../../components/ServiceSlider/ServiceSlider";
+import { PATHS } from "../../../../constants/assetPaths";
 // Background video will be referenced as a public asset
 
 const HeaderHero = () => {

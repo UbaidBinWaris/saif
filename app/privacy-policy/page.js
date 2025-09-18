@@ -1,4 +1,4 @@
-import PrivacyPolicy from '../../components/Contact/PrivacyPolicy';
+import PrivacyPolicy from '../contact/components/PrivacyPolicy';
 
 export const metadata = {
   title: 'Privacy Policy - GIXI AI',

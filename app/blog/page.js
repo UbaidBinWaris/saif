@@ -1,4 +1,4 @@
-import Blog from '../../components/Blog/Blog';
+import Blog from './components/Blog';
 
 export const metadata = {
   title: 'AI Blog - Latest Insights from GIXI AI',

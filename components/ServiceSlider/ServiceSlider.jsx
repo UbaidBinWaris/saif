@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import Pbutton from "../Other/Pbutton";
-import { useAutoScrollSlider } from "../Home/Header/headerLogic";
+import { useAutoScrollSlider } from "../../app/Home/components/Header/headerLogic";
 import "./ServiceSlider.css";
 
 const ServiceSlider = ({ 

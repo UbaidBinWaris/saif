@@ -1,7 +1,7 @@
 import "./Section4.css";
-import Button from "../../Other/button";
-import Pbutton from "../../Other/Pbutton";
-import { PATHS } from "../../../constants/assetPaths";
+import Button from "../../../../components/Other/button";
+import Pbutton from "../../../../components/Other/Pbutton";
+import { PATHS } from "../../../../constants/assetPaths";
 import Link from "next/link";
 import Image from "next/image";
 

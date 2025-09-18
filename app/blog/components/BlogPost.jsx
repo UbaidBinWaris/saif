@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Helmet } from "@dr.pogodin/react-helmet";
 import "./BlogPost.css";
-import Pbutton from "../Other/Pbutton";
-import { getBlogPostBySlug } from "../../data/blog";
+import Pbutton from "../../../components/Other/Pbutton";
+import { getBlogPostBySlug } from "../../../data/blog";
 
 const BlogPost = () => {
   const router = useRouter();

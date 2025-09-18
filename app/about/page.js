@@ -1,4 +1,4 @@
-import About from '../../components/About/About';
+import About from './components/About';
 
 export const metadata = {
   title: 'About GIXI AI - Leading AI Solutions Provider',

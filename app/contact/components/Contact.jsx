@@ -3,11 +3,11 @@ import { useState } from "react";
 import Image from "next/image";
 import "./Contact.css";
 import { Helmet } from "@dr.pogodin/react-helmet";
-import Pbutton from "../Other/Pbutton";
-import { PATHS } from "../../constants/assetPaths";
-import Button from "../Other/button";
+import Pbutton from "../../../components/Other/Pbutton";
+import { PATHS } from "../../../constants/assetPaths";
+import Button from "../../../components/Other/button";
 import AnimatedCounter from "./AnimatedCounter";
-import { usePlanetMouseTracking } from "../Home/Header/headerLogic";
+import { usePlanetMouseTracking } from "../../Home/components/Header/headerLogic";
 
 // AnimatedCounter component
 <AnimatedCounter end="250M+" />

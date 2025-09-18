@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo, useCallback, memo } from 'react';
 import Link from 'next/link';
 import { LayoutGrid, Bot, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
-import { portfolioProjects, getProjectsByCategory, getProjectsPaginated } from '../../data/projects';
+import { portfolioProjects, getProjectsByCategory, getProjectsPaginated } from '../../../data/projects';
 import './Portfolio.css';
 
 // Memoized ProjectCard component for better performance

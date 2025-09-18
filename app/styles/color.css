@@ -1,17 +1,10 @@
-/* Color Variables for GIXI AI Solutions */
 :root {
-  /* Four Main Brand Colors */
-  --color-bg-primary: #0d0d0d;        /* Dark background */
-  --color-text-primary: #f5f5f5;      /* Primary text (light) */
-  --color-text-secondary: #d1d5db;    /* Secondary text (gray) */
-  --color-text-muted: #9ca3af;        /* Muted text (darker gray) */
+  /* Core Neutrals */
+  --color-black: #0a0a0a;           /* Primary backgrounds, cards */
+  --color-white: #ffffff;           /* Primary text, highlights */
+  --color-light-grey: #d1d5db;     /* Secondary text, subtle elements */
+  --color-dark-grey: #6b7280;      /* Muted text, borders, icons */
   
-  /* Essential Interactive Colors */
-  --color-border-light: rgba(255, 255, 255, 0.1);  /* Border */
-  --color-hover-primary: #ffffff;      /* Hover state */
-  
-  /* Transition Timing */
-  --transition-normal: 300ms ease-in-out;
+  /* Signature Accent */
+  --color-universe-orange: #f59e0b; /* CTAs, planets, special effects */
 }
-
-

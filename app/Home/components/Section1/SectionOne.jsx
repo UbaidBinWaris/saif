@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import "./SectionOne.css";
-import { PATHS } from "../../../constants/assetPaths";
+import { PATHS } from "../../../../constants/assetPaths";
 import { LayoutGrid, Paintbrush, FileImage } from "lucide-react";
 
 const SectionOne = () => {

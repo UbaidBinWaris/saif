@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import "./PrivacyPolicy.css";
-import { PATHS } from "../../constants/assetPaths";
+import { PATHS } from "../../../constants/assetPaths";
 
 export default function PrivacyPolicy() {
   return (

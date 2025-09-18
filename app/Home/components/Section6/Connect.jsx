@@ -1,7 +1,7 @@
 import './Connect.css'; 
-import Pbutton from '../../Other/Pbutton';
-import { PATHS } from '../../../constants/assetPaths';
-import Button from '../../Other/button.jsx';
+import Pbutton from '../../../../components/Other/Pbutton';
+import { PATHS } from '../../../../constants/assetPaths';
+import Button from '../../../../components/Other/button.jsx';
 import Link from 'next/link';
 import Image from "next/image";
 

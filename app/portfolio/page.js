@@ -1,5 +1,5 @@
 import React from 'react';
-import Portfolio from '../../components/Portfolio/Portfolio';
+import Portfolio from './components/Portfolio';
 
 export const metadata = {
   title: 'Portfolio - GIXI AI Solutions | Our Latest Projects & Work',

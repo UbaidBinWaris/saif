@@ -4,9 +4,9 @@ import { Helmet } from "@dr.pogodin/react-helmet";
 import Link from "next/link";
 import Image from "next/image";
 import "./About.css";
-import Pbutton from "../Other/Pbutton";
-import { PATHS } from "../../constants/assetPaths";
-import Button from "../Other/button";
+import Pbutton from "../../../components/Other/Pbutton";
+import { PATHS } from "../../../constants/assetPaths";
+import Button from "../../../components/Other/button";
 import { FaStar, FaStarHalfAlt, FaRocket, FaBolt, FaLightbulb } from 'react-icons/fa';
 
 const About = () => {
